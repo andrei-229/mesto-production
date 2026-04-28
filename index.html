@@ -56,7 +56,7 @@
                 required
                 maxlength="40"
                 minlength="2"
-                pattern="[A-Za-zА-Яа-яЁё\s-]+"
+                pattern="[\p{L}\s-]+"
               />
               <span class="popup__error" id="user-name-error"></span>
             </label>
@@ -98,7 +98,7 @@
                 placeholder="Название"
                 maxlength="30"
                 minlength="2"
-                pattern="[A-Za-zА-Яа-яЁё\s-]+"
+                pattern="[\p{L}\s-]+"
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
                 required
               />
